@@ -13,8 +13,6 @@ func main() {
 	pwd, _ := os.Getwd()
 	paths := strings.Split(pwd, "/")
 
-	paths = paths[:len(paths)-1]
-
 	for {
 		if len(paths) == 0 {
 			break

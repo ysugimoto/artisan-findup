@@ -13,9 +13,9 @@ darwin:
 	cd build/darwin; tar cvfz artisanc_macos.tar.gz artisanc
 
 windows-x64:
-	GOOS=windows GOARC=amd64 go build -o build/windows_x64/artisanc main.go
-	cd build/windows_x64; tar cvfz artisanc_windows64.tar.gz artisanc
+	GOOS=windows GOARC=amd64 go build -o build/windows_x64/artisanc.exe main.go
+	cd build/windows_x64; tar cvfz artisanc_windows64.tar.gz artisanc.exe
 
 windows-i386:
-	GOOS=windows GOARC=386 go build -o build/windows_i386/artisanc main.go
-	cd build/windows_i386; tar cvfz artisanc_windowsi386.tar.gz artisanc
+	GOOS=windows GOARC=386 go build -o build/windows_i386/artisanc.exe main.go
+	cd build/windows_i386; tar cvfz artisanc_windowsi386.tar.gz artisanc.exe
